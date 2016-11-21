@@ -28,11 +28,6 @@ You must provide your own API key in order to build the app. When you get it, ju
 
 * [Glide](https://github.com/bumptech/glide)
 
-## Android Developer Nanodegree
-[![udacity][1]][2]
-
-[1]: ../master/art/nanodegree-logo.png
-[2]: https://www.udacity.com/course/android-developer-nanodegree--nd801
 
 ## License
 
