@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GENERAL -->
+    <color name="colorPrimary">#fd4f4f</color>
+    <color name="colorPrimaryDark">#df0000</color>
+    <color name="colorPrimaryLight">#ff3a3a</color>
+
+    <color name="colorAccent">#46bc87</color>
+    <color name="colorAccentLight">#55eca9</color>
+
+    <color name="colorTextPrimary">#000000</color>
+
+    <!-- RATING BAR -->
+    <color name="colorControlNormal">#c6c2c2</color>
+    <color name="colorControlActivated">#5ebef2</color>
+
+</resources>
+

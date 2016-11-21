@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.BaseActivity">
+
+    <!--
+    TODO: NEXT STEP ADD SETTINGS MENU
+      <item android:id="@+id/action_settings" android:orderInCategory="100" android:title="@string/action_settings" app:showAsAction="never" />
+     -->
+
+    <!-- BASE MENU CATEGORIES-->
+    <item
+        android:icon="@drawable/icon_sort"
+        android:title="@string/menu_sort"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/menu_sort_popularity"
+                    android:enabled="true"
+                    android:title="@string/menu_sort_popularity"
+                    android:visible="true" />
+
+                <item
+                    android:id="@+id/menu_sort_rating"
+                    android:enabled="true"
+                    android:title="@string/menu_sort_rating"
+                    android:visible="true" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

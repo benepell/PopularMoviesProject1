@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- TEXT -->
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    <dimen name="text_size_xlarge">24sp</dimen>
+
+    <!-- GRID VIEW -->
+    <dimen name="grid_size_medium">8dp</dimen>
+    <dimen name="grid_size_normal">16dp</dimen>
+    <dimen name="grid_size_large">20dp</dimen>
+
+    <!-- COMMON -->
+    <dimen name="content_padding_medium">8dp</dimen>
+
+</resources>

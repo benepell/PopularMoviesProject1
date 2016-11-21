@@ -1,0 +1,31 @@
+<resources>
+    <!-- GENERAL -->
+    <string name="app_name">Project 1 - Popular Movies</string>
+
+    <!-- INTENT -->
+    <string name="intent_extra_movie_model" translatable="false">UIModel</string>
+
+    <!-- SHARED PREFERENCES -->
+    <string name="pref_key_sort" translatable="false">pref_key</string>
+
+    <!-- STRING NETWORK STATE - NO INTERNET-->
+    <string name="network_state_not_connected">No Internet connection. Make sure Wi-Fi or cellular data is turned on, then try again.</string>
+    <string name="details_released_label">Released: </string>
+    <string name="download_message_task">Downloading data&#8230;</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+
+    <!-- NO OUTPUT-->
+    <string name="movies_details_date_error">Date not Available</string>
+    <string name="details_content_description_image_backdrop">Movie Content Description</string>
+
+    <!-- LABEL-->
+    <string name="details_overview">Overview</string>
+    <string name="details_detail_text">Details</string>
+    <string name="details_rating_label">Rating: </string>
+
+    <!-- MENU -->
+    <string name="menu_sort">Category</string>
+    <string name="menu_sort_popularity">most popularity</string>
+    <string name="menu_sort_rating">most rating</string>
+
+</resources>
