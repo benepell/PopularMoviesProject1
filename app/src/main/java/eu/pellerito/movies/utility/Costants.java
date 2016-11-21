@@ -43,9 +43,9 @@ public class Costants {
     /**
      * CATEGORY - MENU -
      */
-    public static final String POPULARITY_DESC = "popularity.desc";
-    public static final String VOTE_AVERAGE_DESC = "vote_average.desc";
-    public static final String SORTBY_DEFAULT_PARAM = "popularity.desc";
+    public static final String POPULAR = "popular";
+    public static final String TOP_RATED = "top_rated";
+    public static final String SORTBY_DEFAULT_PARAM = "popular";
 
     /**
      * COSTANTS FETCH TASK - NETWORK
@@ -63,9 +63,7 @@ public class Costants {
 
     public static final String MOVIE_DB_BASE_URL = "https://api.themoviedb.org";
     public static final String MOVIE_DB_VERSION = "3";
-    public static final String MOVIE_DB_MODE = "discover";
     public static final String MOVIE_DB_TYPE = "movie";
-    public static final String SORTBY_PARAM = "sort_by";
     public static final String APPID_PARAM = "api_key";
 
     /**
@@ -99,5 +97,7 @@ public class Costants {
     public static final int GLIDE_IMAGE_BACKDROP_WIDTH = 800;
     public static final int GLIDE_IMAGE_BACKDROP_HEIGHT = 600;
 
+    public static final int GLIDE_IMAGE_POSTER_WIDTH = 200;
+    public static final int GLIDE_IMAGE_POSTER_HEIGHT = 300;
 
 }

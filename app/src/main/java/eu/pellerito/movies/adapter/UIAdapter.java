@@ -55,11 +55,9 @@ public class UIAdapter extends BaseAdapter {
     }
 
     /**
-     *  add costants LOG TAG
+     * add costants LOG TAG
      */
     // private final String LOG_TAG = UIAdapter.class.getSimpleName();
-
-
     @Override
     public int getCount() {
         return mImageUrls.size();

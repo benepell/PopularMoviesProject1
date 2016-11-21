@@ -3,11 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".activity.BaseActivity">
 
-    <!--
-    TODO: NEXT STEP ADD SETTINGS MENU
-      <item android:id="@+id/action_settings" android:orderInCategory="100" android:title="@string/action_settings" app:showAsAction="never" />
-     -->
-
     <!-- BASE MENU CATEGORIES-->
     <item
         android:icon="@drawable/icon_sort"
@@ -18,15 +13,15 @@
             <group android:checkableBehavior="single">
 
                 <item
-                    android:id="@+id/menu_sort_popularity"
+                    android:id="@+id/menu_sort_popular"
                     android:enabled="true"
-                    android:title="@string/menu_sort_popularity"
+                    android:title="@string/menu_sort_popular"
                     android:visible="true" />
 
                 <item
-                    android:id="@+id/menu_sort_rating"
+                    android:id="@+id/menu_sort_top_rated"
                     android:enabled="true"
-                    android:title="@string/menu_sort_rating"
+                    android:title="@string/menu_sort_top_rated"
                     android:visible="true" />
             </group>
         </menu>

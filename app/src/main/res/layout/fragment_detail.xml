@@ -6,7 +6,7 @@
     android:weightSum="8"
     tools:context="eu.pellerito.movies.fragment.DetailFragment">
 
-    <!-- BackDrop -->
+    <!-- Image: BackDrop -->
     <ImageView
         android:id="@+id/detail_back_drop"
         android:layout_width="match_parent"
@@ -28,17 +28,36 @@
         android:textStyle="bold" />
 
 
-    <!-- OverView -->
-    <TextView
-        android:id="@+id/detail_overview"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="3"
-        android:text="@string/details_overview"
-        android:textColor="@color/colorTextPrimary"
-        android:textSize="@dimen/text_size_medium"
-        android:textStyle="italic" />
+        android:orientation="horizontal">
+
+        <!-- Image: Poster -->
+        <ImageView
+            android:id="@+id/detail_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/details_content_description_image_poster"
+            android:padding="@dimen/content_padding_medium" />
+
+
+        <!-- OverView -->
+        <TextView
+            android:id="@+id/detail_overview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/content_padding_medium"
+            android:text="@string/details_overview"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="italic"/>
+
+
+    </LinearLayout>
 
 
     <LinearLayout

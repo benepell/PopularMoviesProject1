@@ -34,9 +34,6 @@ public class PrefUtil {
 
     public PrefUtil(Context context, String namePreferences) {
 
-        if (namePreferences == null || namePreferences.equals("")) {
-            namePreferences = "k_pref";
-        }
         preferences = context.getSharedPreferences(namePreferences, MODE_PRIVATE);
 
     }
@@ -44,13 +41,7 @@ public class PrefUtil {
 
     public void putString(String key, String value) {
 
-        if (value == null) {
-            throw new IllegalArgumentException("value is null");
-        }
-
-
         preferences.edit().putString(key, value).apply();
-
     }
 
     public String getString(String key) {
@@ -59,28 +50,4 @@ public class PrefUtil {
 
     }
 
-/*
-    public int getInt(String key) {
-
-        return  preferences.getInt(key, 0);
-
-    }
-
-
-
-    public void putInt(String key, int value) {
-
-
-        preferences.edit().putInt(key, value).apply();
-
-    }
-*/
-
-
-// TODO: NEXT DEVELOPER. STEP 2
-/*
-    public void clear() {
-        preferences.edit().clear().apply();
-    }
-*/
 } 

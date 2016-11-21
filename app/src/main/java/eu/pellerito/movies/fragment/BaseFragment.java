@@ -100,9 +100,9 @@ public class BaseFragment extends Fragment implements UIListener {
 
         switch (item.getItemId()) {
 
-            case R.id.menu_sort_popularity:
+            case R.id.menu_sort_popular:
 
-                mOrder = String.valueOf(Costants.POPULARITY_DESC);
+                mOrder = String.valueOf(Costants.POPULAR);
 
                 // update date
                 updateUI();
@@ -115,9 +115,9 @@ public class BaseFragment extends Fragment implements UIListener {
 
                 return true;
 
-            case R.id.menu_sort_rating:
+            case R.id.menu_sort_top_rated:
 
-                mOrder = String.valueOf(Costants.VOTE_AVERAGE_DESC);
+                mOrder = String.valueOf(Costants.TOP_RATED);
 
                 // update date
                 updateUI();
@@ -141,10 +141,10 @@ public class BaseFragment extends Fragment implements UIListener {
         super.onPrepareOptionsMenu(menu);
 
         // compare SharedPreference ...
-        if ((mOrder != null) && mOrder.equalsIgnoreCase(String.valueOf(Costants.VOTE_AVERAGE_DESC))) {
-            menu.findItem(R.id.menu_sort_rating).setChecked(true);
+        if ((mOrder != null) && mOrder.equalsIgnoreCase(String.valueOf(Costants.TOP_RATED))) {
+            menu.findItem(R.id.menu_sort_top_rated).setChecked(true);
         } else {
-            menu.findItem(R.id.menu_sort_popularity).setChecked(true);
+            menu.findItem(R.id.menu_sort_popular).setChecked(true);
         }
 
     }

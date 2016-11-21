@@ -81,20 +81,7 @@ public class DetailFragment extends Fragment {
         // BackDrop ImageView Reference
         ImageView backDrop = (ImageView) rootView.findViewById(R.id.detail_back_drop);
 
-
-        // change image with poster if BackDrop not present
-
         String imageBackDrop = UIModel.getBackDropUrl().toString();
-
-        // String default error backDrop
-
-
-        // set imageBackDrop to value Poster if values is null
-        if ((imageBackDrop != null) &&
-                (imageBackDrop.substring(4).equalsIgnoreCase("null"))) {
-            imageBackDrop = UIModel.getPosterUrl().toString();
-        }
-
 
         // get Orientation 1 Portrait, 2 LandScape
         int orientationScreen = getResources().getConfiguration().orientation;
@@ -123,6 +110,37 @@ public class DetailFragment extends Fragment {
 
         // title
         ((TextView) rootView.findViewById(R.id.detail_title)).setText(UIModel.getTitle());
+
+
+        // Poster ImageView Reference
+        ImageView poster = (ImageView) rootView.findViewById(R.id.detail_poster);
+
+        String imagePoster = UIModel.getPosterUrl().toString();
+
+        if (orientationScreen == 1) {
+            // orientation Portrait
+            Glide.with(getActivity())
+                    .load(imagePoster)
+                    .override(Costants.GLIDE_IMAGE_POSTER_WIDTH, Costants.GLIDE_IMAGE_POSTER_HEIGHT)
+                    .fitCenter()
+                    .placeholder(R.drawable.download_in_progress)
+                    .error(R.drawable.no_image)
+                    .into(poster);
+
+        } else {
+            // orientation Landscape
+            Glide.with(getActivity())
+                    .load(imagePoster)
+                    .override(Costants.GLIDE_IMAGE_POSTER_WIDTH * 2, Costants.GLIDE_IMAGE_POSTER_HEIGHT)
+                    .centerCrop()
+                    .placeholder(R.drawable.download_in_progress)
+                    .error(R.drawable.no_image)
+                    .into(poster);
+
+        }
+
+
+
 
         // OverView
         ((TextView) rootView.findViewById(R.id.detail_overview)).setText(UIModel.getOverview());

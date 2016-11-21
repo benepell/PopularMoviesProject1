@@ -107,9 +107,8 @@ public class FetchTask extends AsyncTask<String, Void, UIModel[]> {
 
             Uri builtUri = Uri.parse(Costants.MOVIE_DB_BASE_URL).buildUpon()
                     .appendEncodedPath(Costants.MOVIE_DB_VERSION)
-                    .appendEncodedPath(Costants.MOVIE_DB_MODE)
                     .appendEncodedPath(Costants.MOVIE_DB_TYPE)
-                    .appendQueryParameter(Costants.SORTBY_PARAM, params[0]) // vote_average , popularity
+                    .appendEncodedPath(params[0]) // popular , top_rated
                     .appendQueryParameter(Costants.APPID_PARAM,
                             BuildConfig.MOVIE_DB_API_KEY) // ADD API KEY in build.gradle Module app
                     .build();
