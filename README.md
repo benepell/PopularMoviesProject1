@@ -2,6 +2,7 @@
 
 Here is a simple and colorful android app which I made for "Android Developer Nanodegree" - Project 1.
 
+Popular Movies was evaluated by certified Udacity code reviewer and was graded as "Exceeds Specifications".
 
 ## Features
 
