@@ -19,9 +19,9 @@ You must provide your own API key in order to build the app. When you get it, ju
 
 ## Screens
 
-![screen](/art/phone-movies.png)
+![screen](phone-movies.png)
 
-![screen](/art/phone-details.png)
+![screen](phone-details.png)
 
 
 ## Libraries
